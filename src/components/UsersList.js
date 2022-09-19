@@ -3,6 +3,9 @@ import "./UsersList.css";
 
 const UsersList = (props) => {
   console.log(props.name);
+  if(props.age <= 0){
+    console.log('come on man ')
+}
   return (
     <Card>
       <div className="expense-item">
