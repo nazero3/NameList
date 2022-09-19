@@ -1,8 +1,8 @@
 
 import './App.css';
 import UserForm from './components/UserForm';
-import UsersList from './components/UsersList'
 import {useState} from 'react';
+import Users from './components/Users';
 
 function App() {
   
@@ -15,7 +15,8 @@ function App() {
   return (
     <div>
       <UserForm onSaveList={onSaveNewUser}/>
-      <UsersList items={usersList}/>
+      
+      <Users items={usersList}/>
     </div>
   );
 }
